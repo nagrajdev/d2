@@ -1,0 +1,5 @@
+fundstransfer\data\MemberRepository.class
+fundstransfer\util\Resources.class
+fundstransfer\data\MemberListProducer.class
+fundstransfer\service\MemberRegistration.class
+fundstransfer\model\Member.class

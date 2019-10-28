@@ -1,0 +1,11 @@
+Bundle-Name: id
+Bundle-SymbolicName: idea
+Bundle-Version: 1.0-SNAPSHOT
+Export-Package: idea.constants
+Web-ContextPath: /id
+-jsp: *.jsp,*.jspf
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-plugin.npm: com.liferay.ant.bnd.npm.NpmAnalyzerPlugin
+-plugin.resourcebundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
+-sass: *

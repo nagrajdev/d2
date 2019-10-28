@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ww</groupId>
+  <artifactId>ww</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <scm>
+    <connection>scm:git:ssh://github.com/me/myproject.git</connection>
+    <developerConnection>scm:git:ssh://github.com/me/myproject.git</developerConnection>
+    <url>scm:git:ssh://github.com/me</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.github.github</groupId>
+        <artifactId>site-maven-plugin</artifactId>
+        <version>0.9</version>
+        <executions>
+          <execution>
+            <id>site.project-website</id>
+            <goals>
+              <goal>site</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <message>Creating site for ${project.version}</message>
+              <path>repo</path>
+              <merge>true</merge>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
